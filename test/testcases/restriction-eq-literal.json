@@ -1,0 +1,13 @@
+[
+  {
+    "type": "property",
+    "prefix": "ex",
+    "name": "birthday",
+    "restriction": [
+      {
+        "type": "eq",
+        "data": "1970-01-01"
+      }
+    ]
+  }
+]

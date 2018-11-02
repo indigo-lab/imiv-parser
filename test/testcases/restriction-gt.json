@@ -1,0 +1,13 @@
+[
+  {
+    "type": "property",
+    "prefix": "ex",
+    "name": "zero",
+    "restriction": [
+      {
+        "type": "gt",
+        "data": 1
+      }
+    ]
+  }
+]

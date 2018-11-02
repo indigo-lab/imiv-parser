@@ -1,0 +1,14 @@
+[
+  {
+    "type": "class",
+    "prefix": "ex",
+    "name": "Person",
+    "restriction": [
+      {
+        "prefix": "ex",
+        "name": "Animal",
+        "type": "type"
+      }
+    ]
+  }
+]

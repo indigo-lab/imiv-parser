@@ -1,0 +1,19 @@
+[
+  {
+    "type": "set",
+    "class": {
+      "prefix": "ex",
+      "name": "Animal"
+    },
+    "property": {
+      "prefix": "ex",
+      "name": "birthday"
+    },
+    "restriction": [
+      {
+        "type": "cardinality",
+        "min": 1
+      }
+    ]
+  }
+]

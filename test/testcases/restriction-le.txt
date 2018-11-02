@@ -1,0 +1,1 @@
+property ex:zero{<=1} ; 

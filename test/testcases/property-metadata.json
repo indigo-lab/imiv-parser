@@ -1,0 +1,14 @@
+[
+  {
+    "type": "property",
+    "prefix": "ex",
+    "name": "say",
+    "metadata": [
+      {
+        "type": "description",
+        "language": "en",
+        "data": "say hello"
+      }
+    ]
+  }
+]

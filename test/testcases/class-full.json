@@ -1,0 +1,30 @@
+[
+  {
+    "type": "class",
+    "prefix": "ic",
+    "name": "人型",
+    "restriction": [
+      {
+        "prefix": "ic",
+        "name": "実体型",
+        "type": "type"
+      }
+    ],
+    "metadata": [
+      {
+        "type": "description",
+        "data": "人の情報を表現するためのクラス用語"
+      },
+      {
+        "type": "name",
+        "data": "Person",
+        "language": "en"
+      },
+      {
+        "type": "description",
+        "data": "A class term to express information of a person.",
+        "language": "en"
+      }
+    ]
+  }
+]

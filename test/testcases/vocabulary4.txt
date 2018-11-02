@@ -1,0 +1,4 @@
+#prefix ic: "http://imi.go.jp/ns/core/2"
+#prefix ex: "http://example.org/"
+#name "共通語彙基盤コア語彙"
+vocabulary "http://imi.go.jp/ns/core/2" ;

@@ -1,0 +1,2 @@
+#prefix ic: "http://imi.go.jp/ns/core/2"
+vocabulary "http://imi.go.jp/ns/core/2" ;

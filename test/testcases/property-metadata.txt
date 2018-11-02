@@ -1,0 +1,2 @@
+#description@en "say hello"
+property ex:say ;

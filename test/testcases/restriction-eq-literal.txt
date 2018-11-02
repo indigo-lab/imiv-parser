@@ -1,0 +1,1 @@
+property ex:birthday{='1970-01-01'} ; 

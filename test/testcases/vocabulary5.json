@@ -1,0 +1,27 @@
+[
+  {
+    "type": "vocabulary",
+    "data": "http://imi.go.jp/ns/core/2",
+    "metadata": [
+      {
+        "type": "prefix",
+        "prefix": "ic",
+        "data": "http://imi.go.jp/ns/core/2"
+      },
+      {
+        "type": "prefix",
+        "prefix": "ex",
+        "data": "http://example.org/"
+      },
+      {
+        "type": "name",
+        "data": "共通語彙基盤コア語彙"
+      },
+      {
+        "type": "name",
+        "language": "en",
+        "data": "IMI Core Vocabulary"
+      }
+    ]
+  }
+]

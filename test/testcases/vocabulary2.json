@@ -1,0 +1,13 @@
+[
+  {
+    "type": "vocabulary",
+    "data": "http://imi.go.jp/ns/core/2",
+    "metadata": [
+      {
+        "type": "prefix",
+        "prefix": "ic",
+        "data": "http://imi.go.jp/ns/core/2"
+      }
+    ]
+  }
+]

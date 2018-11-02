@@ -1,0 +1,21 @@
+[{
+  "type": "use",
+  "class": {
+    "prefix": "ex",
+    "name": "Animal",
+    "next": {
+      "prefix": "ic",
+      "name": "名称",
+      "group": "ひらがな",
+      "next": {
+        "prefix": "ic",
+        "name": "表記",
+        "restriction": [{
+          "type": "cardinality",
+          "min": 1,
+          "max": 1
+        }]
+      }
+    }
+  }
+}]
