@@ -37,13 +37,15 @@ classStatement = IGNORE a:metadata* IGNORE b:class IGNORE ";" {
 
 // 【クラス定義】
 // [2017-10-16] 構文規則由来であり、空白許容ルールを導入
-class = IGNORE a:"deprecated"? IGNORE "class" IGNORE b:className IGNORE c:restriction* {
+class = IGNORE a:"deprecated"? IGNORE "class" IGNORE b:className IGNORE c:typeRestriction? {
   var obj = b;
   obj.type = "class";
-  if(c.length > 0) obj.restriction = c;
+  if(c) obj.restriction = [c];
   if(a) obj.deprecated = true;
   return obj;
 }
+
+typeRestriction = IGNORE "{" a:type IGNORE "}" {return a;}
 
 // 【プロパティ定義文】
 // [2017-10-16] 構文規則由来であり、空白許容ルールを導入
@@ -91,11 +93,10 @@ datamodelStatement = IGNORE a:metadata* IGNORE b:datamodel IGNORE ";" {
 
 // 【データモデル定義】
 // [2017-10-16] 構文規則由来であり、空白許容ルールを導入
-datamodel = IGNORE "datamodel" IGNORE a:restriction* {
+datamodel = IGNORE "datamodel" {
     var obj = {
       type :"datamodel"
     };
-    if(a.length > 0) obj.restriction = a;
    return obj;
   }
 
