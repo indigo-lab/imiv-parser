@@ -93,6 +93,18 @@ describe('imiv-parser', function() {
         }]);
     });
 
+    it('型制約を複数持つクラス定義文は文法エラーとなること', function() {
+      expect(() => {
+        parse("class b:Human{@a:Animal}{@a:OtherAnimal};")
+      }).to.throw();
+    });
+
+    it('型制約以外の制約を持つクラス定義文は文法エラーとなること', function() {
+      expect(() => {
+        parse("class b:Human{='hello'};")
+      }).to.throw();
+    });
+
     it('deprecated, 型制約の混在するクラス定義文がパースできること', function() {
       expect(parse("deprecated class b:Human{@a:Animal};"))
         .deep.equal(parse("deprecatedclassb:Human{@a:Animal};"))
@@ -327,6 +339,10 @@ describe('imiv-parser', function() {
         .deep.equal([{
           "type": "datamodel"
         }]);
+    });
+
+    it('制約のあるデータモデル文は文法エラーとなること', function() {
+      expect(() => parse("datamodel {$'http://example.org/'};")).to.throw();
     });
 
     it('基本的な語彙定義文をパースできること', function() {
