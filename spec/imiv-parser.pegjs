@@ -6,7 +6,8 @@
 
 // 【IMI 定義文書】
 // 文と文末の間につくコメント・空白を許容する
-start = a:statement* IGNORE {return a;}
+// 文頭の Byte order mark は無視する
+start = "\uFEFF"? a:statement* IGNORE {return a;}
 
 // 【文】
 statement = (vocabularyStatement/datamodelStatement/classStatement/propertyStatement/setStatement/useStatement)

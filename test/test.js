@@ -375,8 +375,6 @@ describe('imiv-parser', function() {
     it('コア語彙2.4.0の語彙定義をエラーなくパースできること', function() {
       expect(function() {
         var txt = fs.readFileSync(dir + "core240.imiv.txt", "UTF-8");
-        //strip BOM
-        txt = txt.replace(/^\uFEFF/, "");
         try {
           var a = parse(txt);
           return a;
