@@ -2,12 +2,12 @@
   "name": "imiv-parser",
   "version": "1.0.0",
   "description": "IMI Vocabulary Notation parser for JavaScript",
+  "files": [
+    "imiv-parser.js"
+  ],
   "main": "imiv-parser.js",
   "scripts": {
-    "build": "npm run build-node; npm run build-browser; npm run build-browser-uglify;",
-    "build-node": "pegjs -o imiv-parser.js spec/imiv-parser.pegjs",
-    "build-browser": "pegjs --export-var IMIVParser --format globals -o dist/imiv-parser.js spec/imiv-parser.pegjs",
-    "build-browser-uglify": "uglifyjs -m -c -- dist/imiv-parser.js > dist/imiv-parser.min.js",
+    "build": "pegjs --format umd --export-var IMIVParser < spec/imiv-parser.pegjs | uglifyjs -m -c > imiv-parser.js",
     "test": "mocha"
   },
   "repository": {

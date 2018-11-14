@@ -21,7 +21,7 @@ $ npm install indigo-lab/imiv-parser
 ### browser
 
 ```html
-<script src="https://indigo-lab.github.io/imiv-parser/dist/imiv-parser.min.js"></script>
+<script src="https://indigo-lab.github.io/imiv-parser/imiv-parser.js"></script>
 ```
 
 # Usage
